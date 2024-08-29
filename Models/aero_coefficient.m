@@ -1,4 +1,4 @@
-function [CA, CNa, Xcp] = a_coefficient(Mach)
+function [CA, CNa, Xcp] = aero_coefficient(Mach)
     % Define Mach number data points
     M = [0 0.3 0.5 0.7 0.9 1.0 1.1 1.2 1.3 1.4 1.5 2.5 3.5 4.5 5.5];
     

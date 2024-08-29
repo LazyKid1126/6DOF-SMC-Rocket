@@ -58,7 +58,7 @@ function [dx, Jyy, Jzz, Fthrust, length_g] = six_dof_rocket_sim(t, x, u, P, a, r
         Mach = Vbody_norm / a;
 
         % Mach vs. Aerodynamic Coefficient
-        [CA, CNa, Xcp] = a_coefficient(Mach);
+        [CA, CNa, Xcp] = aero_coefficient(Mach);
 
         % Calculate AoA & flight-path angle
         alpha = atan(w_b / u_b);
